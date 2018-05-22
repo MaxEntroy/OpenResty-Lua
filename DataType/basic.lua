@@ -1,5 +1,7 @@
+#!/bin/bash
+
 print( type("hello,world") )
-print( type(print) ) --函数是一定类型，具有对象语义
+print( type(print) ) --函数是一等类型，具有对象语义
 print( type(true) )
 print( type(360.0) )
 print( type(nil) ) --ngx.null 不同于nil
@@ -42,3 +44,11 @@ if d then
 else
 	print("not d")
 end
+
+print("---------------")
+
+local order = 3.99
+local score = 98.01
+print( math.floor(order) )
+print( math.ceil(score) )
+
